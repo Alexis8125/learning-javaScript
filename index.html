@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JavaScript</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .container{
+            width: 600px;
+            height: 300px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a mi pagina web</h1>
+        <input type="text">
+        <button>ENVIAR</button>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    //Formas de imprimir en pantalla
+    console.log("Esto es un texto desde la consola");
+    document.write("Esto es un texto en el archivo HTML");
+    // alert("Hola");
+    Swal.fire("SweetAlert2 is working!");
+    //Variables y tipos de datos
+    let name = "Alexis";//Cadenas de texto (String)
+    let age = 180;//numericos
+    var bool = true;//booleanos
+    const pi = 3.1416;//decimales
+
+    //operadores basicos
+    let number_one = 3;
+    let number_two = 4;
+    let suma = number_one + number_two;
+    let resta = number_one - number_two;
+    let mult = number_one * number_two;
+    let dividir = number_one / number_two; 
+
+    //operadores logicos
+    //< > >= <= <>
+    //= Asignacion
+    //comparacion 5=="5"
+    console.log(5=="5");//valor
+    console.log(5==="5");//valor y tipo de dato
+
+    //AND && OR ||
+
+    //estructuras de control
+    //if(condicion){codigo a ejecutar}
+    // let edad = prompt("¿Cuantos años tienes?");
+    // edad = parseInt(edad);
+
+    // if(edad<18 && edad>0){
+    //     alert("No es mayor de edad");
+    // } else if(edad>= 18 && edad<=100){
+    //     alert("Es mayor de edad");
+    // } else{
+    //     console.log("Error de la edad, ¿estas seguro que deberias existir?");
+    // }
+
+    //ARRAYS
+    var array_mul = [1, 2.5, "abc"];
+    var days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    console.log(days);
+
+    //ciclos
+    for(let i = 0; i<days.length; i++){
+        console.log(days[i]);
+    }
+
+    let j = 0;
+    while(j<days.length){
+        console.log(days[j]);
+        j++;
+    }
+</script>
+</html>
